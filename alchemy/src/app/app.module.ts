@@ -7,9 +7,10 @@ import { HeaderComponent } from './header/header.componnet';
 import { PotionsComponent } from './potions/potions.component';
 import { PotionListComponent } from './potions/potion-list/potion-list.component';
 import { PotionDetailComponent } from './potions/potion-detail/potion-detail.component';
-import { PotionItemComponent } from './potions/potion-item/potion-item.component';
+
 import { MerchantListComponent } from './merchant-list/merchant-list.component';
 import { MerchantEditComponent } from './merchant-list/merchant-edit/merchant-edit.component';
+import { PotionItemComponent } from './potions/potion-list/potion-item/potion-item.component';
 
 @NgModule({
   declarations: [
