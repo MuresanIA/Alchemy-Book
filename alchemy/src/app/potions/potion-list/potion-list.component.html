@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
     <div class="col-xs-12">
         <button class="btn btn-success">New Potion</button>
     </div>
@@ -17,5 +17,22 @@
         </a>
         <app-potion-item></app-potion-item>
     </div>
+</div> -->
+
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Potion</button>
+    </div>
 </div>
 
+<hr>
+
+<div class="row">
+    <div class="col-xs-12">
+        <app-potion-item
+         *ngFor="let potionEl of potions"
+         [potion]="potionEl"
+         (potionSelected)="onPotionSelected(potionEl)"
+         ></app-potion-item>
+    </div>
+</div>

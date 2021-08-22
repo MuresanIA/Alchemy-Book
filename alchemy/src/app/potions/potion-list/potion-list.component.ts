@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { PotionModel } from '../potion.model';
 
 @Component({
@@ -7,6 +7,8 @@ import { PotionModel } from '../potion.model';
   styleUrls: ['./potion-list.component.css']
 })
 export class PotionListComponent implements OnInit {
+ @Output() potionWasSelected = new EventEmitter <PotionModel>();
+
   potions: PotionModel[]= [
     new PotionModel (
       'Potion of Health',
@@ -28,6 +30,10 @@ export class PotionListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onPotionSelected(potion: PotionModel){
+    this.potionWasSelected.emit(potion);
   }
 
 }

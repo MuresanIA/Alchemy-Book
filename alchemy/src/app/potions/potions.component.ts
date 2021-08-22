@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PotionModel } from './potion.model';
 
 @Component({
   selector: 'app-potions',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./potions.component.css']
 })
 export class PotionsComponent implements OnInit {
+  selectedPotion: PotionModel;
 
   constructor() { }
 

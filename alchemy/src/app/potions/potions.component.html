@@ -1,8 +1,17 @@
 <div class="row">
     <div class="col-md-5">
-        <app-potion-list></app-potion-list>
+        <app-potion-list
+        (potionWasSelected)="selectedPotion = $event"
+        ></app-potion-list>
     </div>
     <div class="col-md-7">
-        <app-potion-detail></app-potion-detail>
+        <app-potion-detail
+        *ngIf="selectedPotion; else infoText"
+        [potion]="selectedPotion"
+        ></app-potion-detail>
+        
+        <ng-template #infoText>
+            <p>Please select a potion</p>
+        </ng-template>
     </div>
 </div>
