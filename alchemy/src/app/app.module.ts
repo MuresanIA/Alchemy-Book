@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,7 @@ import { PotionDetailComponent } from './potions/potion-detail/potion-detail.com
 import { MerchantListComponent } from './merchant-list/merchant-list.component';
 import { MerchantEditComponent } from './merchant-list/merchant-edit/merchant-edit.component';
 import { PotionItemComponent } from './potions/potion-list/potion-item/potion-item.component';
-import { PotionModel } from './potions/potion.model';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PotionModel } from './potions/potion.model';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
