@@ -12,6 +12,7 @@ import { PotionDetailComponent } from './potions/potion-detail/potion-detail.com
 import { MerchantListComponent } from './merchant-list/merchant-list.component';
 import { MerchantEditComponent } from './merchant-list/merchant-edit/merchant-edit.component';
 import { PotionItemComponent } from './potions/potion-list/potion-item/potion-item.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PotionItemComponent } from './potions/potion-list/potion-item/potion-it
     PotionDetailComponent,
     PotionItemComponent,
     MerchantListComponent,
-    MerchantEditComponent
+    MerchantEditComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
