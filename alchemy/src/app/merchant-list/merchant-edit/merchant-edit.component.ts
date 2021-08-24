@@ -24,5 +24,6 @@ export class MerchantEditComponent implements OnInit {
 
     const newIngredient = new IngredientModel(ingredientName, ingredientAmount);
     this.ingredientAdded.emit(newIngredient);
+    
   }
 }
