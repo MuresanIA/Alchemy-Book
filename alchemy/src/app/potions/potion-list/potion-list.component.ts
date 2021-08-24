@@ -35,6 +35,4 @@ export class PotionListComponent implements OnInit {
   onPotionSelected(potion: PotionModel){
     this.potionWasSelected.emit(potion);
   }
-
-  
 }
