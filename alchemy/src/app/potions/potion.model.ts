@@ -5,3 +5,4 @@ export class PotionModel {
          public imagePath: string
          ){}
     }
+    

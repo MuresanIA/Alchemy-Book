@@ -15,5 +15,5 @@ export class PotionDetailComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
+
